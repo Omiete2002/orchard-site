@@ -22,7 +22,8 @@ h2{font-size:clamp(32px,5vw,52px);line-height:1.12;margin-bottom:24px}
 @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
 
 .nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:18px 28px;display:flex;justify-content:space-between;align-items:center;transition:.4s}
-.nav.solid{background:rgba(14,32,21,.95);backdrop-filter:blur(8px);padding:12px 28px;border-bottom:1px solid rgba(201,169,106,.15)}
+.nav:before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(14,32,21,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,169,106,.15);opacity:0;transition:opacity .4s}
+.nav.solid{padding:12px 28px}.nav.solid:before{opacity:1}
 .logo{font-family:var(--serif);font-size:24px;letter-spacing:.2em;color:var(--ivory)}
 .nav ul{display:flex;gap:32px;list-style:none;align-items:center}
 .nav ul a{font-size:11px;letter-spacing:.25em;text-transform:uppercase;padding-bottom:4px;border-bottom:1px solid transparent;transition:.3s}
