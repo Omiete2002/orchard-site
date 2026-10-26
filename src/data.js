@@ -1,11 +1,35 @@
-import jollof from './assets/dishes/jollof.jpg'
-import egusi from './assets/dishes/egusi.jpg'
-import seabass from './assets/dishes/seabass.jpg'
-import yassa from './assets/dishes/yassa.jpg'
-import suya from './assets/dishes/suya.jpg'
-import akara from './assets/dishes/akara.jpg'
-import okra from './assets/dishes/okra.jpg'
-import kelewele from './assets/dishes/kelewele.jpg'
+import f_royal_breakfast from './assets/dishes/royal-breakfast.jpg'
+import f_akara_pap from './assets/dishes/akara-pap.jpg'
+import f_yam_egg from './assets/dishes/yam-egg.jpg'
+import f_waakye from './assets/dishes/waakye.jpg'
+import f_omelette from './assets/dishes/omelette.jpg'
+import f_french_toast from './assets/dishes/french-toast.jpg'
+import f_light_breakfast from './assets/dishes/light-breakfast.jpg'
+import f_party_jollof from './assets/dishes/party-jollof.jpg'
+import f_ghana_jollof from './assets/dishes/ghana-jollof.jpg'
+import f_yassa from './assets/dishes/yassa.jpg'
+import f_attieke from './assets/dishes/attieke.jpg'
+import f_cassava_leaf from './assets/dishes/cassava-leaf.jpg'
+import f_mafe from './assets/dishes/mafe.jpg'
+import f_seafood_okra from './assets/dishes/seafood-okra.jpg'
+import f_egusi from './assets/dishes/egusi.jpg'
+import f_grilled_fish from './assets/dishes/grilled-fish.jpg'
+import f_suya from './assets/dishes/suya.jpg'
+import f_wings from './assets/dishes/wings.jpg'
+import f_plantain_bites from './assets/dishes/plantain-bites.jpg'
+import f_prawns from './assets/dishes/prawns.jpg'
+import f_sliders from './assets/dishes/sliders.jpg'
+import f_spring_rolls from './assets/dishes/spring-rolls.jpg'
+import f_sharing_platter from './assets/dishes/sharing-platter.jpg'
+import f_pasta from './assets/dishes/pasta.jpg'
+import f_lamb from './assets/dishes/lamb.jpg'
+import f_caesar from './assets/dishes/caesar.jpg'
+import f_burger from './assets/dishes/burger.jpg'
+import f_fries from './assets/dishes/fries.jpg'
+import f_fried_plantain from './assets/dishes/fried-plantain.jpg'
+import f_brownie from './assets/dishes/brownie.jpg'
+import f_fruit_platter from './assets/dishes/fruit-platter.jpg'
+import f_ice_cream from './assets/dishes/ice-cream.jpg'
 import d_redWines from './assets/drinks/red-wines.jpg'
 import d_whiteWines from './assets/drinks/white-wines.jpg'
 import d_rose from './assets/drinks/rose.jpg'
@@ -65,17 +89,6 @@ export const drinkImages = {
   'West African Old Fashioned': d_oldFashioned,
 }
 
-// Menu item name -> photo. Only dishes that exist on the menu get a photo.
-export const dishImages = {
-  'Nigerian Party Jollof': jollof,
-  'Egusi & Pounded Yam': egusi,
-  'Grilled Fish & Plantain': seabass,
-  'Senegalese Chicken Yassa': yassa,
-  'Signature Beef Suya': suya,
-  'Akara & Pap': akara,
-  'Orchard Seafood Okra': okra,
-  'Plantain Bites': kelewele,
-}
 
 export const hours = [
   ['Breakfast', '7:00 AM – 11:30 AM'],
@@ -178,4 +191,40 @@ export const menus = {
       ['Gin & Vodka', 'Premium and reserve selections.'],
       ['Rum & Tequila', 'White Rum · Dark Rum · Blanco · Reposado'],
       ['Beer & Cider', 'A compact range of popular local and imported favourites.']]]]},
+}
+
+// Menu item name -> photo. Names must match the menu exactly.
+export const dishImages = {
+  'The Orchard Royal Breakfast': f_royal_breakfast,
+  'Akara & Pap': f_akara_pap,
+  'Yam & Egg Sauce': f_yam_egg,
+  'Ghanaian Waakye Breakfast Bowl': f_waakye,
+  'Plantain Omelette': f_omelette,
+  'French Toast & Tropical Fruits': f_french_toast,
+  'Orchard Light Breakfast': f_light_breakfast,
+  'Nigerian Party Jollof': f_party_jollof,
+  'Ghanaian Jollof': f_ghana_jollof,
+  'Senegalese Chicken Yassa': f_yassa,
+  'Ivorian Attiéké & Grilled Fish': f_attieke,
+  'Sierra Leonean Cassava Leaf': f_cassava_leaf,
+  'Senegalese Beef Mafé': f_mafe,
+  'Orchard Seafood Okra': f_seafood_okra,
+  'Egusi & Pounded Yam': f_egusi,
+  'Grilled Fish & Plantain': f_grilled_fish,
+  'Signature Beef Suya': f_suya,
+  'Orchard Spicy Wings': f_wings,
+  'Plantain Bites': f_plantain_bites,
+  'Garlic Butter Prawns': f_prawns,
+  'Orchard Mini Sliders': f_sliders,
+  'Vegetable Spring Rolls': f_spring_rolls,
+  'Orchard Sharing Platter': f_sharing_platter,
+  'Creamy Chicken Pasta': f_pasta,
+  'Grilled Lamb Chops': f_lamb,
+  'Chicken Caesar Salad': f_caesar,
+  'Orchard Beef Burger': f_burger,
+  'French Fries': f_fries,
+  'Fried Plantain': f_fried_plantain,
+  'Chocolate Brownie': f_brownie,
+  'Tropical Fruit Platter': f_fruit_platter,
+  'Vanilla Ice Cream': f_ice_cream,
 }
