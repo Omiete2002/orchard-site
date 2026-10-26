@@ -33,6 +33,7 @@ export default function Layout() {
   const [solid, setSolid] = useState(false)
 
   useEffect(() => { window.scrollTo(0, 0); setOpen(false) }, [pathname])
+  useEffect(() => { document.body.style.overflow = open ? 'hidden' : ''; return () => { document.body.style.overflow = '' } }, [open])
   useEffect(() => {
     const f = () => setSolid(window.scrollY > 40)
     f(); window.addEventListener('scroll', f, { passive: true })
@@ -41,14 +42,18 @@ export default function Layout() {
 
   return (
     <>
-      <nav className={`nav ${solid || pathname !== '/' ? 'solid' : ''}`}>
+      <nav className={`nav ${solid || open || pathname !== '/' ? 'solid' : ''}`}>
         <Link to="/" className="logo brand"><img src={logo} alt="" />ORCHARD</Link>
-        <button className="burger" onClick={() => setOpen(!open)} aria-label="Toggle menu">{open ? '✕' : '☰'}</button>
-        <ul className={open ? 'open' : ''}>
+        <button className="burger" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}>{open ? '✕' : '☰'}</button>
+        <ul className="dlinks">
           {links.map(([to, label]) => <li key={to}><NavLink to={to}>{label}</NavLink></li>)}
           <li><Link to="/visit#reserve" className="navcta">Reserve</Link></li>
         </ul>
       </nav>
+      <div className={`mmenu ${open ? 'open' : ''}`} aria-hidden={!open}>
+        {links.map(([to, label]) => <NavLink key={to} to={to} tabIndex={open ? 0 : -1}>{label}</NavLink>)}
+        <Link to="/visit#reserve" className="navcta" tabIndex={open ? 0 : -1}>Reserve</Link>
+      </div>
       <main key={pathname} className="page"><Outlet /></main>
       <footer className="footer">
         <Link to="/" className="logo"><img className="flogo" src={logo} alt="The Orchard logo" /><span>THE ORCHARD</span></Link>

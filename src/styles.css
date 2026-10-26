@@ -2,6 +2,7 @@
 --serif:'Cormorant Garamond',Georgia,serif;--sans:'Montserrat',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+html,body{overflow-x:hidden;max-width:100%}
 body{background:var(--green2);color:var(--ink);font:300 15px/1.8 var(--sans);overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 h1,h2,h3,h4{font-family:var(--serif);font-weight:500;color:var(--ivory)}
@@ -25,9 +26,9 @@ h2{font-size:clamp(32px,5vw,52px);line-height:1.12;margin-bottom:24px}
 .nav:before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(14,32,21,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,169,106,.15);opacity:0;transition:opacity .4s}
 .nav.solid{padding:12px 28px}.nav.solid:before{opacity:1}
 .logo{font-family:var(--serif);font-size:24px;letter-spacing:.2em;color:var(--ivory)}
-.nav ul{display:flex;gap:32px;list-style:none;align-items:center}
-.nav ul a{font-size:11px;letter-spacing:.25em;text-transform:uppercase;padding-bottom:4px;border-bottom:1px solid transparent;transition:.3s}
-.nav ul a:hover,.nav ul a.active{border-color:var(--gold);color:var(--gold)}
+.dlinks{display:flex;gap:32px;list-style:none;align-items:center}
+.dlinks a{font-size:11px;letter-spacing:.25em;text-transform:uppercase;padding-bottom:4px;border-bottom:1px solid transparent;transition:.3s}
+.dlinks a:hover,.dlinks a.active{border-color:var(--gold);color:var(--gold)}
 .nav .navcta{border:1px solid var(--gold);padding:9px 20px;color:var(--gold)}.nav .navcta:hover{background:var(--gold);color:var(--green2)}
 .burger{display:none;background:none;border:0;color:var(--ivory);font-size:26px;cursor:pointer}
 
@@ -101,8 +102,7 @@ select option{background:var(--green2)}::placeholder{color:var(--muted)}
 
 @media(max-width:860px){
 .sec{padding:70px 0}.burger{display:block;position:relative;z-index:70}.logo{position:relative;z-index:70}
-.nav ul{position:fixed;inset:0;background:var(--green2);flex-direction:column;justify-content:center;gap:30px;transform:translateX(100%);transition:.5s}
-.nav ul.open{transform:none}.nav ul a{font-size:14px}
+
 .grid4{grid-template-columns:1fr 1fr}.grid3,.mgrid,.picks,.cols,.space,.r2{grid-template-columns:1fr}
 .space{gap:26px;margin-bottom:60px}.space.flip .plate{order:0}.plate{min-height:220px}.cols{gap:50px}.pagehead{padding-top:130px}}
 @media(max-width:520px){.grid4{grid-template-columns:1fr}.tile{min-height:260px}}
@@ -111,3 +111,13 @@ select option{background:var(--green2)}::placeholder{color:var(--muted)}
 .brand{display:flex;align-items:center;gap:12px}.brand img{height:38px;width:auto}
 .herologo{width:clamp(130px,20vw,200px);height:auto;margin:0 auto 22px;display:block;animation:rise 1.4s ease both;filter:drop-shadow(0 0 28px rgba(201,169,106,.25))}
 .footer .logo{display:flex;flex-direction:column;align-items:center;gap:8px}.flogo{width:76px;height:auto}
+
+.mmenu{display:none}
+@media(max-width:860px){
+.dlinks{display:none}
+.mmenu{display:flex;position:fixed;top:0;left:0;right:0;bottom:0;height:100vh;height:100dvh;z-index:40;background:var(--green2);flex-direction:column;align-items:center;justify-content:center;gap:30px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.mmenu.open{opacity:1;visibility:visible}
+.mmenu a{font-size:14px;letter-spacing:.25em;text-transform:uppercase;border-bottom:1px solid transparent;padding-bottom:4px}
+.mmenu a.active{color:var(--gold);border-color:var(--gold)}
+.mmenu .navcta{border:1px solid var(--gold);padding:12px 30px;color:var(--gold);margin-top:10px}
+}
