@@ -1,3 +1,24 @@
+import jollof from './assets/dishes/jollof.jpg'
+import egusi from './assets/dishes/egusi.jpg'
+import seabass from './assets/dishes/seabass.jpg'
+import yassa from './assets/dishes/yassa.jpg'
+import suya from './assets/dishes/suya.jpg'
+import akara from './assets/dishes/akara.jpg'
+import okra from './assets/dishes/okra.jpg'
+import kelewele from './assets/dishes/kelewele.jpg'
+
+// Menu item name -> photo. Only dishes that exist on the menu get a photo.
+export const dishImages = {
+  'Nigerian Party Jollof': jollof,
+  'Egusi & Pounded Yam': egusi,
+  'Grilled Fish & Plantain': seabass,
+  'Senegalese Chicken Yassa': yassa,
+  'Signature Beef Suya': suya,
+  'Akara & Pap': akara,
+  'Orchard Seafood Okra': okra,
+  'Plantain Bites': kelewele,
+}
+
 export const hours = [
   ['Breakfast', '7:00 AM – 11:30 AM'],
   ['Lunch', 'Noon – 4:00 PM'],

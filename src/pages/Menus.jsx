@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { PageHead } from '../Layout.jsx'
 import { menus } from '../data.js'
+import Dish from '../Dish.jsx'
 
 export default function Menus() {
   const keys = Object.keys(menus)
@@ -20,7 +21,7 @@ export default function Menus() {
               <div key={g}>
                 <h3 className="grp">{g}</h3>
                 <div className="mgrid">
-                  {items.map(([n, d]) => <div className="it" key={n}><h4>{n}</h4><p>{d}</p></div>)}
+                  {items.map(([n, d]) => <Dish key={n} name={n} desc={d} />)}
                 </div>
               </div>
             ))}

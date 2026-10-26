@@ -121,3 +121,17 @@ select option{background:var(--green2)}::placeholder{color:var(--muted)}
 .mmenu a.active{color:var(--gold);border-color:var(--gold)}
 .mmenu .navcta{border:1px solid var(--gold);padding:12px 30px;color:var(--gold);margin-top:10px}
 }
+
+.it.hasimg{display:flex;gap:18px;align-items:center}
+.itxt{flex:1;min-width:0}
+.thumb{flex:0 0 104px;width:104px;height:84px;padding:0;border:1px solid rgba(201,169,106,.35);background:var(--walnut);cursor:zoom-in;overflow:hidden;transition:.4s}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.thumb:hover{border-color:var(--gold)}.thumb:hover img{transform:scale(1.08)}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(6,14,9,.94);display:flex;align-items:center;justify-content:center;padding:24px;animation:fade .3s;cursor:zoom-out}
+.lightbox figure{max-width:760px;width:100%;cursor:default}
+.lightbox img{width:100%;max-height:70vh;object-fit:cover;display:block;border:1px solid rgba(201,169,106,.4)}
+.lightbox figcaption{padding-top:16px;text-align:center}
+.lightbox figcaption b{display:block;font:500 28px var(--serif);color:var(--ivory)}
+.lightbox figcaption span{font-size:13px;color:var(--muted)}
+.lbx{position:absolute;top:18px;right:22px;background:none;border:0;color:var(--ivory);font-size:26px;cursor:pointer}
+@media(max-width:520px){.thumb{flex-basis:84px;width:84px;height:70px}.it.hasimg{gap:14px}}

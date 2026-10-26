@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Reveal } from '../Layout.jsx'
 import logo from '../assets/logo.png'
+import Dish from '../Dish.jsx'
 import { spaces, hours, menus } from '../data.js'
 
 export default function Home() {
@@ -53,7 +54,7 @@ export default function Home() {
           <Reveal className="center"><span className="eyebrow">From the Kitchen &amp; Bar</span><h2>West African soul</h2></Reveal>
           <Reveal className="picks">
             {Object.values(menus).flatMap(m => m.groups.flatMap(g => g[1])).filter(i => picks.includes(i[0])).map(([n, d]) => (
-              <div className="it" key={n}><h4>{n}</h4><p>{d}</p></div>
+              <Dish key={n} name={n} desc={d} />
             ))}
           </Reveal>
           <div className="center" style={{ marginTop: 40 }}><Link to="/menus" className="btn">Full Menus</Link></div>
