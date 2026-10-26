@@ -6,6 +6,64 @@ import suya from './assets/dishes/suya.jpg'
 import akara from './assets/dishes/akara.jpg'
 import okra from './assets/dishes/okra.jpg'
 import kelewele from './assets/dishes/kelewele.jpg'
+import d_redWines from './assets/drinks/red-wines.jpg'
+import d_whiteWines from './assets/drinks/white-wines.jpg'
+import d_rose from './assets/drinks/rose.jpg'
+import d_sparkling from './assets/drinks/sparkling.jpg'
+import d_whisky from './assets/drinks/whisky.jpg'
+import d_cognac from './assets/drinks/cognac.jpg'
+import d_ginVodka from './assets/drinks/gin-vodka.jpg'
+import d_rumTequila from './assets/drinks/rum-tequila.jpg'
+import d_beerCider from './assets/drinks/beer-cider.jpg'
+import d_hibiscus from './assets/drinks/hibiscus.jpg'
+import d_tropical from './assets/drinks/tropical.jpg'
+import d_virginMojito from './assets/drinks/virgin-mojito.jpg'
+import d_gingerFizz from './assets/drinks/ginger-fizz.jpg'
+import d_coffee from './assets/drinks/coffee.jpg'
+import d_tea from './assets/drinks/tea.jpg'
+import d_juices from './assets/drinks/juices.jpg'
+import d_softdrinks from './assets/drinks/softdrinks.jpg'
+import d_margarita from './assets/drinks/margarita.jpg'
+import d_mojito from './assets/drinks/mojito.jpg'
+import d_espresso from './assets/drinks/espresso.jpg'
+import d_negroni from './assets/drinks/negroni.jpg'
+import d_whiskySour from './assets/drinks/whisky-sour.jpg'
+import d_sunset from './assets/drinks/sunset.jpg'
+import d_diplomat from './assets/drinks/diplomat.jpg'
+import d_lagos from './assets/drinks/lagos.jpg'
+import d_greenHouse from './assets/drinks/green-house.jpg'
+import d_oldFashioned from './assets/drinks/old-fashioned.jpg'
+
+// Drink name -> photo (portrait crops). Names must match the menu exactly.
+export const drinkImages = {
+  'Red Wines': d_redWines,
+  'White Wines': d_whiteWines,
+  'Rosé': d_rose,
+  'Sparkling & Champagne': d_sparkling,
+  'Whisky': d_whisky,
+  'Cognac': d_cognac,
+  'Gin & Vodka': d_ginVodka,
+  'Rum & Tequila': d_rumTequila,
+  'Beer & Cider': d_beerCider,
+  'Orchard Hibiscus Cooler': d_hibiscus,
+  'Tropical Garden': d_tropical,
+  'Virgin Mojito': d_virginMojito,
+  'Orchard Ginger Fizz': d_gingerFizz,
+  'Coffee': d_coffee,
+  'Tea': d_tea,
+  'Fresh Juices': d_juices,
+  'Soft Drinks & Water': d_softdrinks,
+  'Margarita': d_margarita,
+  'Mojito': d_mojito,
+  'Espresso Martini': d_espresso,
+  'Negroni': d_negroni,
+  'Whisky Sour': d_whiskySour,
+  'Orchard Sunset': d_sunset,
+  'The Diplomat': d_diplomat,
+  'Lagos to Dakar': d_lagos,
+  'The Green House': d_greenHouse,
+  'West African Old Fashioned': d_oldFashioned,
+}
 
 // Menu item name -> photo. Only dishes that exist on the menu get a photo.
 export const dishImages = {
@@ -109,9 +167,15 @@ export const menus = {
       ['Tea', 'English Breakfast · Green Tea · Peppermint'],
       ['Fresh Juices', 'Orange · Pineapple · Watermelon'],
       ['Soft Drinks & Water', 'Cola · Lemon-Lime · Tonic · Soda · Still · Sparkling']]],
-    ['The Cellar & Spirits', [
-      ['Wines & Bubbles', 'Merlot · Cabernet Sauvignon · Shiraz · Sauvignon Blanc · Chardonnay · Rosé · Prosecco · Champagne'],
-      ['Whisky & Cognac', 'Blended Scotch · Single Malt · Bourbon · VSOP · XO'],
-      ['Gin, Vodka, Rum & Tequila', 'Premium and reserve selections'],
-      ['Beer & Cider', 'A compact range of popular local and imported favourites']]]]},
+    ['Wines & Bubbles', [
+      ['Red Wines', 'Merlot · Cabernet Sauvignon · Shiraz'],
+      ['White Wines', 'Sauvignon Blanc · Chardonnay'],
+      ['Rosé', 'A crisp, dry rosé selection.'],
+      ['Sparkling & Champagne', 'Prosecco · Premium Champagne · Prestige Champagne']]],
+    ['Spirits & Beer', [
+      ['Whisky', 'Blended Scotch · Single Malt · Bourbon'],
+      ['Cognac', 'VSOP · XO'],
+      ['Gin & Vodka', 'Premium and reserve selections.'],
+      ['Rum & Tequila', 'White Rum · Dark Rum · Blanco · Reposado'],
+      ['Beer & Cider', 'A compact range of popular local and imported favourites.']]]]},
 }

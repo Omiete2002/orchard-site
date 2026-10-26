@@ -135,3 +135,7 @@ select option{background:var(--green2)}::placeholder{color:var(--muted)}
 .lightbox figcaption span{font-size:13px;color:var(--muted)}
 .lbx{position:absolute;top:18px;right:22px;background:none;border:0;color:var(--ivory);font-size:26px;cursor:pointer}
 @media(max-width:520px){.thumb{flex-basis:84px;width:84px;height:70px}.it.hasimg{gap:14px}}
+
+.thumb.tall{flex-basis:84px;width:84px;height:112px}
+.lightbox img.tall{width:auto;max-width:100%;height:min(68vh,560px);margin:0 auto;object-fit:contain}
+@media(max-width:520px){.thumb.tall{flex-basis:72px;width:72px;height:96px}}
