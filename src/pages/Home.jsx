@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Reveal } from '../Layout.jsx'
-import logo from '../assets/logo.png'
 import Dish from '../Dish.jsx'
+import logo from '../assets/logo.png'
 import { spaces, hours, menus } from '../data.js'
 
 export default function Home() {

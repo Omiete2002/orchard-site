@@ -18,7 +18,7 @@ export default function Spaces() {
               </article>
             </Reveal>
           ))}
-          <Reveal className="center" ><p className="fine">Seating is intentionally limited to protect the atmosphere. Booking ahead is recommended.</p>
+          <Reveal className="center"><p className="fine">Seating is intentionally limited to protect the atmosphere. Booking ahead is recommended.</p>
             <Link to="/visit#reserve" className="btn" style={{ marginTop: 20 }}>Reserve a Table</Link></Reveal>
         </div>
       </section>

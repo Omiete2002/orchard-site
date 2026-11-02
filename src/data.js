@@ -30,19 +30,19 @@ import f_fried_plantain from './assets/dishes/fried-plantain.jpg'
 import f_brownie from './assets/dishes/brownie.jpg'
 import f_fruit_platter from './assets/dishes/fruit-platter.jpg'
 import f_ice_cream from './assets/dishes/ice-cream.jpg'
-import d_redWines from './assets/drinks/red-wines.jpg'
-import d_whiteWines from './assets/drinks/white-wines.jpg'
+import d_red_wines from './assets/drinks/red-wines.jpg'
+import d_white_wines from './assets/drinks/white-wines.jpg'
 import d_rose from './assets/drinks/rose.jpg'
 import d_sparkling from './assets/drinks/sparkling.jpg'
 import d_whisky from './assets/drinks/whisky.jpg'
 import d_cognac from './assets/drinks/cognac.jpg'
-import d_ginVodka from './assets/drinks/gin-vodka.jpg'
-import d_rumTequila from './assets/drinks/rum-tequila.jpg'
-import d_beerCider from './assets/drinks/beer-cider.jpg'
+import d_gin_vodka from './assets/drinks/gin-vodka.jpg'
+import d_rum_tequila from './assets/drinks/rum-tequila.jpg'
+import d_beer_cider from './assets/drinks/beer-cider.jpg'
 import d_hibiscus from './assets/drinks/hibiscus.jpg'
 import d_tropical from './assets/drinks/tropical.jpg'
-import d_virginMojito from './assets/drinks/virgin-mojito.jpg'
-import d_gingerFizz from './assets/drinks/ginger-fizz.jpg'
+import d_virgin_mojito from './assets/drinks/virgin-mojito.jpg'
+import d_ginger_fizz from './assets/drinks/ginger-fizz.jpg'
 import d_coffee from './assets/drinks/coffee.jpg'
 import d_tea from './assets/drinks/tea.jpg'
 import d_juices from './assets/drinks/juices.jpg'
@@ -51,44 +51,12 @@ import d_margarita from './assets/drinks/margarita.jpg'
 import d_mojito from './assets/drinks/mojito.jpg'
 import d_espresso from './assets/drinks/espresso.jpg'
 import d_negroni from './assets/drinks/negroni.jpg'
-import d_whiskySour from './assets/drinks/whisky-sour.jpg'
+import d_whisky_sour from './assets/drinks/whisky-sour.jpg'
 import d_sunset from './assets/drinks/sunset.jpg'
 import d_diplomat from './assets/drinks/diplomat.jpg'
 import d_lagos from './assets/drinks/lagos.jpg'
-import d_greenHouse from './assets/drinks/green-house.jpg'
-import d_oldFashioned from './assets/drinks/old-fashioned.jpg'
-
-// Drink name -> photo (portrait crops). Names must match the menu exactly.
-export const drinkImages = {
-  'Red Wines': d_redWines,
-  'White Wines': d_whiteWines,
-  'Rosé': d_rose,
-  'Sparkling & Champagne': d_sparkling,
-  'Whisky': d_whisky,
-  'Cognac': d_cognac,
-  'Gin & Vodka': d_ginVodka,
-  'Rum & Tequila': d_rumTequila,
-  'Beer & Cider': d_beerCider,
-  'Orchard Hibiscus Cooler': d_hibiscus,
-  'Tropical Garden': d_tropical,
-  'Virgin Mojito': d_virginMojito,
-  'Orchard Ginger Fizz': d_gingerFizz,
-  'Coffee': d_coffee,
-  'Tea': d_tea,
-  'Fresh Juices': d_juices,
-  'Soft Drinks & Water': d_softdrinks,
-  'Margarita': d_margarita,
-  'Mojito': d_mojito,
-  'Espresso Martini': d_espresso,
-  'Negroni': d_negroni,
-  'Whisky Sour': d_whiskySour,
-  'Orchard Sunset': d_sunset,
-  'The Diplomat': d_diplomat,
-  'Lagos to Dakar': d_lagos,
-  'The Green House': d_greenHouse,
-  'West African Old Fashioned': d_oldFashioned,
-}
-
+import d_green_house from './assets/drinks/green-house.jpg'
+import d_old_fashioned from './assets/drinks/old-fashioned.jpg'
 
 export const hours = [
   ['Breakfast', '7:00 AM – 11:30 AM'],
@@ -227,4 +195,35 @@ export const dishImages = {
   'Chocolate Brownie': f_brownie,
   'Tropical Fruit Platter': f_fruit_platter,
   'Vanilla Ice Cream': f_ice_cream,
+}
+
+// Drinks use portrait crops.
+export const drinkImages = {
+  'Red Wines': d_red_wines,
+  'White Wines': d_white_wines,
+  'Rosé': d_rose,
+  'Sparkling & Champagne': d_sparkling,
+  'Whisky': d_whisky,
+  'Cognac': d_cognac,
+  'Gin & Vodka': d_gin_vodka,
+  'Rum & Tequila': d_rum_tequila,
+  'Beer & Cider': d_beer_cider,
+  'Orchard Hibiscus Cooler': d_hibiscus,
+  'Tropical Garden': d_tropical,
+  'Virgin Mojito': d_virgin_mojito,
+  'Orchard Ginger Fizz': d_ginger_fizz,
+  'Coffee': d_coffee,
+  'Tea': d_tea,
+  'Fresh Juices': d_juices,
+  'Soft Drinks & Water': d_softdrinks,
+  'Margarita': d_margarita,
+  'Mojito': d_mojito,
+  'Espresso Martini': d_espresso,
+  'Negroni': d_negroni,
+  'Whisky Sour': d_whisky_sour,
+  'Orchard Sunset': d_sunset,
+  'The Diplomat': d_diplomat,
+  'Lagos to Dakar': d_lagos,
+  'The Green House': d_green_house,
+  'West African Old Fashioned': d_old_fashioned,
 }
