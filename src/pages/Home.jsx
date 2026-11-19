@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Reveal } from '../Layout.jsx'
 import Dish from '../Dish.jsx'
-import logo from '../assets/logo.png'
+import lockup from '../assets/lockup.png'
 import { spaces, hours, menus } from '../data.js'
 
 export default function Home() {
@@ -10,9 +10,9 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="herobox">
-          <img className="herologo" src={logo} alt="The Orchard emblem" />
-          <h1>THE ORCHARD</h1>
-          <div className="sub">Resto Lounge &amp; Social House</div>
+          <img className="herolockup" src={lockup} alt="" />
+          <h1 className="sr-only">The Orchard Resto Lounge</h1>
+          <div className="sub">A Social House</div>
           <p className="tag">Your Home Away From Home.</p>
           <div className="btnrow">
             <Link to="/visit#reserve" className="btn">Reserve a Table</Link>

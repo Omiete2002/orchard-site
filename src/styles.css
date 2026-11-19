@@ -140,3 +140,8 @@ select option{background:var(--green2)}::placeholder{color:var(--muted)}
 @media(max-width:520px){.grid4{grid-template-columns:1fr}.tile{min-height:260px}
 .thumb{flex-basis:84px;width:84px;height:70px}.thumb.tall{flex-basis:72px;width:72px;height:96px}.it.hasimg{gap:14px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;padding:0}
+.herolockup{width:min(86vw,560px);height:auto;margin:0 auto 26px;display:block;animation:rise 1.4s ease both;filter:drop-shadow(0 6px 30px rgba(0,0,0,.45))}
+.footer .flogolink{display:block;margin-bottom:14px}.footer .flogo{width:min(70vw,260px);height:auto;margin:0 auto}
+.brand img{height:42px}

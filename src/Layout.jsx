@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { NavLink, Link, Outlet, useLocation } from 'react-router-dom'
 import logo from './assets/logo.png'
+import lockup from './assets/lockup.png'
 
 const links = [['/the-house', 'The House'], ['/spaces', 'Spaces'], ['/menus', 'Menus'], ['/visit', 'Visit']]
 
@@ -56,7 +57,7 @@ export default function Layout() {
       </div>
       <main key={pathname} className="page"><Outlet /></main>
       <footer className="footer">
-        <Link to="/" className="logo"><img className="flogo" src={logo} alt="The Orchard logo" /><span>THE ORCHARD</span></Link>
+        <Link to="/" className="flogolink"><img className="flogo" src={lockup} alt="The Orchard Resto Lounge" /></Link>
         <p>Resto Lounge &amp; Social House · Abuja, Nigeria</p>
         <p className="tagline">Your Home Away From Home.</p>
         <div className="flinks">{links.map(([to, l]) => <Link key={to} to={to}>{l}</Link>)}</div>
