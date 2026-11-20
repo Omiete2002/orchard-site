@@ -1,3 +1,9 @@
+import sp_living from './assets/spaces/living.jpg'
+import sp_dining from './assets/spaces/dining.jpg'
+import sp_bar from './assets/spaces/bar.jpg'
+import sp_garden from './assets/spaces/garden.jpg'
+import sp_wall from './assets/spaces/wall.jpg'
+import sp_frontage from './assets/spaces/frontage.jpg'
 import f_royal_breakfast from './assets/dishes/royal-breakfast.jpg'
 import f_akara_pap from './assets/dishes/akara-pap.jpg'
 import f_yam_egg from './assets/dishes/yam-egg.jpg'
@@ -67,10 +73,10 @@ export const hours = [
 ]
 
 export const spaces = [
-  { no: 'I', zone: 'Zone A', name: 'The Living Room', short: 'Deep sofas, warm lamps and quiet corners.', text: 'The heart of Orchard. Deep comfortable sofas, upholstered armchairs, warm table lamps, low tables, bookshelves and indoor plants make intimate groups feel at home. Made for conversation and cocktails.', tone: 'a' },
-  { no: 'II', zone: 'Zone B', name: 'The Dining Room', short: 'Banquettes, fine tableware, adjustable light.', text: 'A limited number of proper dining-height tables, luxurious banquettes, excellent tableware and adjustable lighting. Designed for breakfast, business lunch and refined dinner service.', tone: 'b' },
-  { no: 'III', zone: 'Zone C', name: 'The Signature Bar', short: 'A glowing centrepiece of pours and ideas.', text: 'A visually striking centrepiece offering signature cocktails, premium spirits, wines, non-alcoholic creations, fresh juices, coffee and light refreshments.', tone: 'c' },
-  { no: 'IV', zone: 'Zone D', name: 'The Orchard Garden', short: 'Open-air, lantern-lit, unhurried.', text: 'A genuine open-air social terrace with natural vegetation, attractive shade, weather-resistant seating, evening lanterns and subtle landscape lighting, with a designated smoking area away from food service.', tone: 'd' },
+  { no: 'I', zone: 'Zone A', name: 'The Living Room', img: sp_living, short: 'Deep sofas, warm lamps and quiet corners.', text: 'The heart of Orchard. Deep comfortable sofas, upholstered armchairs, warm table lamps, low tables, bookshelves and indoor plants make intimate groups feel at home. Made for conversation and cocktails.', tone: 'a' },
+  { no: 'II', zone: 'Zone B', name: 'The Dining Room', img: sp_dining, short: 'Banquettes, fine tableware, adjustable light.', text: 'A limited number of proper dining-height tables, luxurious banquettes, excellent tableware and adjustable lighting. Designed for breakfast, business lunch and refined dinner service.', tone: 'b' },
+  { no: 'III', zone: 'Zone C', name: 'The Signature Bar', img: sp_bar, short: 'A glowing centrepiece of pours and ideas.', text: 'A visually striking centrepiece offering signature cocktails, premium spirits, wines, non-alcoholic creations, fresh juices, coffee and light refreshments.', tone: 'c' },
+  { no: 'IV', zone: 'Zone D', name: 'The Orchard Garden', img: sp_garden, short: 'Open-air, lantern-lit, unhurried.', text: 'A genuine open-air social terrace with natural vegetation, attractive shade, weather-resistant seating, evening lanterns and subtle landscape lighting, with a designated smoking area away from food service.', tone: 'd' },
 ]
 
 export const rhythm = [
@@ -226,4 +232,14 @@ export const drinkImages = {
   'Lagos to Dakar': d_lagos,
   'The Green House': d_green_house,
   'West African Old Fashioned': d_old_fashioned,
+}
+
+// Ambience photos used on the home page band and the Spaces gallery.
+export const ambience = {
+  wall: sp_wall,
+  gallery: [
+    { src: sp_frontage, title: 'The Entrance', note: 'Lantern-lit pathways, the bar and cabana lounges.' },
+    { src: sp_garden, title: 'The Orchard Garden', note: 'Open-air seating beneath umbrellas and living greenery.' },
+    { src: sp_wall, title: 'The Water Wall', note: 'The first thing you see when you arrive.' },
+  ],
 }

@@ -145,3 +145,20 @@ select option{background:var(--green2)}::placeholder{color:var(--muted)}
 .herolockup{width:min(86vw,560px);height:auto;margin:0 auto 26px;display:block;animation:rise 1.4s ease both;filter:drop-shadow(0 6px 30px rgba(0,0,0,.45))}
 .footer .flogolink{display:block;margin-bottom:14px}.footer .flogo{width:min(70vw,260px);height:auto;margin:0 auto}
 .brand img{height:42px}
+
+/* Photo tiles, plates, band, gallery */
+.tile.photo,.plate.photo{background-size:cover;background-position:center}
+.tile.photo:before,.plate.photo:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,21,16,.05) 35%,rgba(9,21,16,.85));transition:.5s}
+.tile.photo:hover:before{background:linear-gradient(180deg,rgba(9,21,16,.0) 20%,rgba(9,21,16,.92))}
+.tile.photo h3,.tile.photo p,.tile.photo .z,.plate.photo .z{position:relative}
+.tile.photo .numeral{z-index:1;color:rgba(246,240,228,.35)}
+.plate.photo{min-height:360px}
+.band{background:var(--green2);text-align:center;padding-bottom:80px}
+.band>img{display:block;width:100%;height:auto;max-height:74vh;object-fit:cover;object-position:center 40%;-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent)}
+.bandtext{max-width:720px;margin:-10px auto 0;padding:0 24px;position:relative}.bandtext h2{margin-bottom:30px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:40px 0 70px}
+.gtile{position:relative;aspect-ratio:4/3;padding:0;border:1px solid rgba(201,169,106,.3);background:var(--walnut);cursor:zoom-in;overflow:hidden;transition:.4s}
+.gtile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s}
+.gtile:hover{border-color:var(--gold)}.gtile:hover img{transform:scale(1.06)}
+.gtile span{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 12px;background:linear-gradient(transparent,rgba(9,21,16,.85));color:var(--ivory);font:400 10px var(--sans);letter-spacing:.3em;text-transform:uppercase;text-align:left}
+@media(max-width:860px){.gallery{grid-template-columns:1fr}.plate.photo{min-height:260px}.band{padding-bottom:60px}}

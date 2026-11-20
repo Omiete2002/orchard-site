@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { Reveal } from '../Layout.jsx'
 import Dish from '../Dish.jsx'
 import lockup from '../assets/lockup.png'
-import { spaces, hours, menus } from '../data.js'
+import { spaces, hours, menus, ambience } from '../data.js'
 
 export default function Home() {
   const picks = ['Senegalese Chicken Yassa', 'Egusi & Pounded Yam', 'Signature Beef Suya', 'Lagos to Dakar']
@@ -31,13 +31,22 @@ export default function Home() {
         </Reveal>
       </section>
 
+      <section className="band">
+        <img src={ambience.wall} alt="The Orchard water wall" />
+        <Reveal className="bandtext">
+          <span className="eyebrow">The Atmosphere</span>
+          <h2>Lantern light, living greenery and the sound of water.</h2>
+          <Link to="/spaces" className="btn">Explore the Spaces</Link>
+        </Reveal>
+      </section>
+
       <section className="sec">
         <div className="wrap">
           <Reveal className="center"><span className="eyebrow">The Spaces</span><h2>Four rooms, one home</h2></Reveal>
           <div className="grid4">
             {spaces.map(s => (
               <Reveal key={s.name}>
-                <Link to="/spaces" className={`tile tone-${s.tone}`}>
+                <Link to="/spaces" className={`tile photo tone-${s.tone}`} style={{ backgroundImage: `url(${s.img})` }}>
                   <span className="numeral">{s.no}</span>
                   <span className="z">{s.zone}</span>
                   <h3>{s.name}</h3>
